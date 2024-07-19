@@ -1,0 +1,30 @@
+{
+  "name": "design-system-web-components",
+  "private": false,
+  "version": "0.7.8",
+  "type": "module",
+  "main": "dist/my-panel.js",
+  "exports": {
+    "./my-panel": "./dist/my-panel.js",
+    "./my-panel-react": "./dist/my-panel-react.js"
+  },
+  "types": "dist/my-panel.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@lit/react": "^1.0.5",
+    "@types/react": "^18.3.3",
+    "@vitejs/plugin-react": "^4.3.1",
+    "lit": "^3.1.4",
+    "react": "^18.3.1",
+    "rollup-plugin-tree-shakeable": "^1.0.2",
+    "vite-plugin-dts": "^3.9.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
+  }
+}

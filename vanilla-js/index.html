@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>Hello Lit</h1>
+
+    <style>
+      my-panel {
+        --my-panel-primary-bg: aquamarine;
+        --my-panel-primary-color: black;
+      }
+    </style>
+
+    <script type="module">
+      import 'design-system-web-components';
+
+      const el = document.querySelector('my-panel');
+      el.addEventListener('icon-clicked', () => {
+        console.log('icon has been clicked');
+      });
+    </script>
+
+    <my-panel title="My Computer" icon="X" opened>
+      Here is some text for display
+    </my-panel>
+  </body>
+</html>
